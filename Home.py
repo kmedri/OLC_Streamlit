@@ -67,24 +67,6 @@ def map_rtc(data, year, pforce, severity):
     dat = data[cond]['Date'].tolist()
     tim = data[cond]['Time'].tolist()
 
-def map_rtc(data, year, pforce, severity):
-    cond = (
-        data['Year'] == year
-    ) & (
-        data['Police_Force'] == pforce
-    ) & (
-        data['Accident_Severity'] == severity
-    )
-
-    lat = data[cond]['Latitude'].tolist()
-    lon = data[cond]['Longitude'].tolist()
-    nam = data[cond]['Police_Force'].tolist()
-    sev = data[cond]['Accident_Severity'].tolist()
-    cas = data[cond]['Number_of_Casualties'].tolist()
-    veh = data[cond]['Number_of_Vehicles'].tolist()
-    dat = data[cond]['Date'].tolist()
-    tim = data[cond]['Time'].tolist()
-
     def color_producer(status):
         if 'Slight' in status:
             return 'green'
