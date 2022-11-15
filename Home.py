@@ -245,7 +245,7 @@ def main():
             display_severity_status(
                 df, severity_status, 'Severity Status'
             )
-
+        @st.cache
         map_rtc(df, year, pforce, severity_status)
 
     elif selected == 'Visualizations':
