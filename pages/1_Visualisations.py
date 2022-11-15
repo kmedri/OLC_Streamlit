@@ -1,54 +1,30 @@
 import streamlit as st
+from PIL import Image
 
-APP_TITLE = 'Predicting RTC severity using Machine Learning'
+image4 = Image.open('assets/accs_with_time4.png')
+image5 = Image.open('assets/accs_with_time5.png')
+image6 = Image.open('assets/accs_with_time6.png')
+image7 = Image.open('assets/accs_with_time7.png')
 
-st.markdown(
-    """
-    <style>
-    .block-container.css-18e3th9.egzxvld2 {
-    padding-top: 0;
-    }
-    header.css-vg37xl.e8zbici2 {
-    background: none;
-    }
-    span.css-10trblm.e16nr0p30 {
-    text-align: center;
-    color: #2c39b1;
-    }
-    .css-1dp5vir.e8zbici1 {
-    background-image: linear-gradient(
-        90deg, rgb(130 166 192), rgb(74 189 130)
-        );
-    }
-    .css-tw2vp1.e1tzin5v0 {
-    gap: 10px;
-    }
-    .css-50ug3q {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #2c39b1;
-    }
-    .row-widget.stSelectbox {
-    padding: 10px;
-    background: #ffffff;
-    border-radius: 7px;
-    }
-    .row-widget.stRadio {
-    padding: 10px;
-    background: #ffffff;
-    border-radius: 7px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+        # images = [image4, image5, image6, image7]
+        # titles = ['By Year', 'By Month', 'By Quarter', 'By Hours']
 
-col1, col2 = st.columns((1, 3))
-with col1:
-    st.image("https://github.com/liskibruh/streamlit-dashboard-RTC/blob/main/assets/omdenaliverpoollogo.png?raw=true")
-with col2:
-    st.image("https://raw.githubusercontent.com/liskibruh/streamlit-dashboard-RTC/main/assets/accidents1104x271.png")
-
-
-
-st.markdown('## Visualisations')
+        # for title, image in zip(titles, images):
+        #     st.subheader(title)
+        #     st.image(image)
+st.title('By Year')
+st.markdown('We can see that from 2005 we have a healthy decline in **RTCs**')
+st.markdown('However both **serious** and **Fatal** **RTCs** have either plateaued or are on the rise')
+st.image(image4)
+st.title('By Month')
+st.markdown('Our monthly data differs from severity to severity.')
+st.markdown('The **RTCs** for **Fatal** peak in August, October and November.')
+st.markdown('The **RTCs** for **Serious** peak in July.')
+st.markdown('The **RTCs** for **Slight** peak in November.')
+st.image(image5)
+st.title('By Quarter')
+st.markdown('Both **Fatal** and **Slight** **RTCs** peak in Quarter 4.')
+st.image(image6)
+st.title('By Hours')
+st.markdown('All of our **RTCs** show an increase at rush hours.')
+st.image(image7)
