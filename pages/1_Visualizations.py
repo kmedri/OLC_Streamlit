@@ -101,7 +101,7 @@ def accidents_to_years_Line_seperate(df):
                 x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
                 ), row=3, col=1)
         
-        fig.update_layout(width=1100, height=1500, title='Accidents vs Years')
+        fig.update_layout(width=1100, height=2000, title='Accidents vs Years')
 
         #fig.update_xaxes(title_text="<b>Years</b>")
         fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
