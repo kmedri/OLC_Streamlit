@@ -106,17 +106,17 @@ def map_rtc(data, year, pforce, severity):
 
     fg = flm.FeatureGroup(name='My V Map')
 
-    for lt, ln, nm, st, ca, ve, da, ti in zip(
+    for lt, ln, nm, sv, ca, ve, da, ti in zip(
         (lat), (lon), (nam), (sev), (cas), (veh), (dat), (tim)
     ):
         iframe = flm.IFrame(
-            html = html % ((nm), (st), (ca), (ve), (da), (ti)), height = 185
+            html=html % ((nm), (sv), (ca), (ve), (da), (ti)), height=190
         )
         popup = flm.Popup(iframe, min_width=275, max_width=500)
         fg.add_child(
             flm.CircleMarker(
                 location=[lt, ln], popup=(popup),
-                fill_color=color_producer(st), color='None',
+                fill_color=color_producer(sv), color='None',
                 radius=7, fill_opacity=0.7
             )
         )
@@ -129,7 +129,6 @@ def map_rtc(data, year, pforce, severity):
 @st.cache
 def get_data(url):
     df = pd.read_parquet(url)
-
     return df
 
 
@@ -177,6 +176,12 @@ def main():
     background: #ffffff;
     border-radius: 7px;
     }
+    label.css-cgyhhy.effi0qh3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    border-bottom: 3px solid #4abd82;
+    }
     </style>
     """,
         unsafe_allow_html=True
@@ -190,7 +195,7 @@ def main():
     st.title(APP_TITLE)
     st.write('Over the last few years improvements to roads in the UK have been implemented across the country in order to create a safer roading system with some great effect.  \nThe number of **road traffic collisions** are reported to be in decline.  \nUsing datasets from the Department of Transport, we hope to be able to uncover the probability of the severity of a collision.')
 
-        # Load the DATA
+    # Load the DATA
     url = 'data/full_accident_data_time_series.parquet'
     df = get_data(url)
     year = 2006
@@ -224,10 +229,10 @@ def main():
         'Severity Status', ['Slight','Serious', 'Fatal']
         )
 
-    col1,col2,col3,col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        display_year(df,year,'Year')#, f'Year{year}')
+        display_year(df, year, 'Year')  # f'Year{year}')
 
     with col2:
         display_accidents_count(
@@ -245,8 +250,8 @@ def main():
         display_severity_status(
             df, severity_status, 'Severity Status'
             )
-
-    map_rtc(df, year, pforce, severity_status)
+    with st.container():
+        map_rtc(df, year, pforce, severity_status)
 
 
 if __name__ == "__main__":
