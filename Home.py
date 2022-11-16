@@ -133,7 +133,6 @@ def get_data(url):
 
 
 def main():
-    #st.set_page_config(page_title='Omdena Liverpool', layout='wide')
 
 # Colors:
 # Blue = #182D40
@@ -182,7 +181,28 @@ def main():
     font-variant-caps: small-caps;
     border-bottom: 3px solid #4abd82;
     }
-    </style>
+    .css-12w0qpk.e1tzin5v2 {
+    background: #d2d2d2;
+    border-radius: 8px;
+    padding: 5px 10px;
+    }
+    label.css-18ewatb.e16fv1kl2 {
+    font-variant: small-caps;
+    font-size: 1em;
+    }
+    .css-1xarl3l.e16fv1kl1 {
+    float: right;
+    }
+    div[data-testid="stSidebarNav"] li div a {
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 300px;
+        border-radius: 0.5rem;
+    }
+    div[data-testid="stSidebarNav"] li div::focus-visible {
+        background-color: rgba(151, 166, 195, 0.15);
+    }
+   </style>
     """,
         unsafe_allow_html=True
     )
@@ -195,44 +215,32 @@ def main():
     st.title(APP_TITLE)
     st.write('Over the last few years improvements to roads in the UK have been implemented across the country in order to create a safer roading system with some great effect.  \nThe number of **road traffic collisions** are reported to be in decline.  \nUsing datasets from the Department of Transport, we hope to be able to uncover the probability of the severity of a collision.')
 
-    # Load the DATA
+    # Load the DATA.
     url = 'data/full_accident_data_time_series.parquet'
     df = get_data(url)
-    year = 2006
-    severity_status = 'Serious'
-        # st.write(df[(df['Date'] == '2016-10-13') & (df['Police_Force'] == 'Thames Valley')])
-        # st.write(df.sample(1))
-        # st.write(df['Date'])
-        # st.write(len(df['Police_Force'].unique()))
-        # st.write(df.columns)
-        # st.write(df.shape)
 
-        # Add a sidebar for navigation
-        #with st.sidebar:
-        #   selected = option_menu(
-        #      menu_title="Main Menu",
-        #     options=['Accidents', 'Visualizations', 'About']
-            #)
-        # Crete pages
-        #if selected == 'Accidents':
+    # Create lists for dropdowns.
     year_list = list(df['Year'].unique())
     year_list.sort()
     year = st.sidebar.selectbox(
-    'Year', year_list, len(year_list) - 1
+        'Year of Accident', year_list, len(year_list) - 1
     )
+
     pforce_list = list(df['Police_Force'].unique())
     pforce_list.sort()
     pforce = st.sidebar.selectbox(
         'Police Force', pforce_list, len(pforce_list) - 1
         )
+    # Create radio buttons.
     severity_status = st.sidebar.radio(
-        'Severity Status', ['Slight','Serious', 'Fatal']
+        'Severity Status', ['Slight', 'Serious', 'Fatal']
         )
 
+    # Set columns.
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        display_year(df, year, 'Year')  # f'Year{year}')
+        display_year(df, year, 'Year of Accidents')  # f'Year{year}')
 
     with col2:
         display_accidents_count(
