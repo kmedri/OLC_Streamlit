@@ -27,17 +27,22 @@ def accidents_to_years(df):
         fig=make_subplots(rows=3, cols=1)
 
         fig.append_trace(go.Bar( 
-                x=df_slight['Year'], y=df_slight['Accident_Severity']
+                x=df_slight['Year'], y=df_slight['Accident_Severity'], name='Slight Accidents'
                 ), row=1, col=1)
         fig.append_trace(go.Bar( 
-                x=df_serious['Year'], y=df_serious['Accident_Severity']
+                x=df_serious['Year'], y=df_serious['Accident_Severity'], name='Serious Accidents'
                 ), row=2, col=1)
         fig.append_trace(go.Bar( 
-                x=df_fatal['Year'], y=df_fatal['Accident_Severity']
+                x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
                 ), row=3, col=1)
         
         fig.update_layout(width=1100, height=800)
 
+        fig.update_xaxes(title_text="<b>Years</b>")
+        fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
+        fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
+
+        st.header('Accidents vs Years (Bar Graphs)')        
         st.write(fig)
 ##############################################################################
 def main():
