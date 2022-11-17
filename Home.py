@@ -263,5 +263,5 @@ def main():
 
 
 if __name__ == "__main__":
-    st.set_page_config(page_title='Omdena Liverpool', layout='wide')
+    st.set_page_config(page_title='Home', layout='wide')
     main()
