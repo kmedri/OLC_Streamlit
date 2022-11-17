@@ -116,6 +116,11 @@ def accidents_to_years_Line_overlap(df):
 def main():
         url = 'data/full_accident_data_time_series.parquet'
         df = get_data(url)
+        col1, col2 = st.columns((1, 3))
+        with col1:
+                st.image("https://github.com/liskibruh/streamlit-dashboard-RTC/blob/main/assets/omdenaliverpoollogo.png?raw=true")
+        with col2:
+                st.image("https://raw.githubusercontent.com/liskibruh/streamlit-dashboard-RTC/main/assets/accidents1104x271.png")
         accidents_to_years_Bar_subplots(df)
         accidents_to_years_Line_subplots(df)
         accidents_to_years_Line_overlap(df)
