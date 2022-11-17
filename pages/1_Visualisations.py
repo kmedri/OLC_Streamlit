@@ -6,12 +6,12 @@ image5 = Image.open('assets/accs_with_time5.png')
 image6 = Image.open('assets/accs_with_time6.png')
 image7 = Image.open('assets/accs_with_time7.png')
 
-        # images = [image4, image5, image6, image7]
-        # titles = ['By Year', 'By Month', 'By Quarter', 'By Hours']
+# images = [image4, image5, image6, image7]
+# titles = ['By Year', 'By Month', 'By Quarter', 'By Hours']
 
-        # for title, image in zip(titles, images):
-        #     st.subheader(title)
-        #     st.image(image)
+# for title, image in zip(titles, images):
+# st.subheader(title)
+# st.image(image)
 st.title('By Year')
 st.markdown('We can see that from 2005 we have a healthy decline in **RTCs**')
 st.markdown('However both **serious** and **Fatal** **RTCs** have either plateaued or are on the rise')
