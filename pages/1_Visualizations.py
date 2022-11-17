@@ -15,7 +15,7 @@ def get_data(url):
 
 ##############################################################################
 
-def accidents_to_years_Bar(df):
+def accidents_to_years_Bar_combined(df):
         df_slight=df[df['Accident_Severity']=='Slight'][['Accident_Severity','Year']].groupby('Year').count()
         df_slight.reset_index(inplace = True)
 
@@ -25,7 +25,7 @@ def accidents_to_years_Bar(df):
         df_fatal=df[df['Accident_Severity']=='Fatal'][['Accident_Severity','Year']].groupby('Year').count()
         df_fatal.reset_index(inplace = True)
 
-        fig=make_subplots(rows=3, cols=1)
+        fig=make_subplots(rows=3, cols=1, x_title='Years', y_title='Accident Counts')
 
         fig.append_trace(go.Bar( 
                 x=df_slight['Year'], y=df_slight['Accident_Severity'], name='Slight Accidents'
@@ -39,12 +39,44 @@ def accidents_to_years_Bar(df):
         
         fig.update_layout(width=1100, height=800)
 
-        fig.update_xaxes(title_text="<b>Years</b>")
-        fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
-        fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
+        #fig.update_xaxes(title_text="<b>Years</b>")
+        #fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
+        #fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
 
         st.header('Accidents vs Years (Bar Graphs)')        
         st.write(fig)
+##############################################################################
+
+# def accidents_to_years_Bar_seperate(df):
+#         df_slight=df[df['Accident_Severity']=='Slight'][['Accident_Severity','Year']].groupby('Year').count()
+#         df_slight.reset_index(inplace = True)
+
+#         df_serious=df[df['Accident_Severity']=='Serious'][['Accident_Severity','Year']].groupby('Year').count()
+#         df_serious.reset_index(inplace = True)
+
+#         df_fatal=df[df['Accident_Severity']=='Fatal'][['Accident_Severity','Year']].groupby('Year').count()
+#         df_fatal.reset_index(inplace = True)
+
+#         fig=make_subplots(rows=3, cols=1)
+
+#         fig.add_trace(go.Bar( 
+#                 x=df_slight['Year'], y=df_slight['Accident_Severity'], name='Slight Accidents'
+#                 ), row=1, col=1)
+#         fig.add_trace(go.Bar( 
+#                 x=df_serious['Year'], y=df_serious['Accident_Severity'], name='Serious Accidents'
+#                 ), row=2, col=1)
+#         fig.add_trace(go.Bar( 
+#                 x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
+#                 ), row=3, col=1)
+        
+#         fig.update_layout(width=1100, height=800, title='Accidents vs Years')
+
+#         #fig.update_xaxes(title_text="<b>Years</b>")
+#         fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
+#         fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
+
+#         st.header('Accidents vs Years (Line Graphs)')        
+#         st.write(fig)
 ##############################################################################
 
 # def accidents_to_years_Line_combined(df):
@@ -57,7 +89,7 @@ def accidents_to_years_Bar(df):
 #         df_fatal=df[df['Accident_Severity']=='Fatal'][['Accident_Severity','Year']].groupby('Year').count()
 #         df_fatal.reset_index(inplace = True)
 
-#         fig=make_subplots(rows=3, cols=1)
+#         fig=make_subplots(rows=3, cols=1, x_title='Years', y_title='Accidents Count')
 
 #         fig.add_trace(go.Scatter( 
 #                 x=df_slight['Year'], y=df_slight['Accident_Severity'], name='Slight Accidents'
@@ -72,8 +104,8 @@ def accidents_to_years_Bar(df):
 #         fig.update_layout(width=1100, height=1500, title='Accidents vs Years')
 
 #         #fig.update_xaxes(title_text="<b>Years</b>")
-#         fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
-#         fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
+#         #fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
+#         #fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
 
 #         st.header('Accidents vs Years (Line Graphs Combined)')        
 #         st.write(fig)
@@ -101,7 +133,7 @@ def accidents_to_years_Line_seperate(df):
                 x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
                 ), row=3, col=1)
         
-        fig.update_layout(width=1100, height=800, title='Accidents vs Years')
+        fig.update_layout(width=1100, height=800)#, title='Accidents vs Years')
 
         #fig.update_xaxes(title_text="<b>Years</b>")
         fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
@@ -114,7 +146,7 @@ def accidents_to_years_Line_seperate(df):
 def main():
         url = 'data/full_accident_data_time_series.parquet'
         df = get_data(url)
-        accidents_to_years_Bar(df)
+        accidents_to_years_Bar_combined(df)
         accidents_to_years_Line_seperate(df)
         #accidents_to_years_Line_combined(df)
 
