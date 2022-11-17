@@ -175,7 +175,7 @@ def main():
     background: #ffffff;
     border-radius: 7px;
     }
-    label.css-cgyhhy.effi0qh3 {
+    label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
     font-size: 1.1em;
     font-weight: bold;
     font-variant-caps: small-caps;
