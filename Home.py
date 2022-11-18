@@ -210,7 +210,7 @@ def main():
     with col1:
         st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/omdenaliverpoollogo.png?raw=true")
     with col2:
-        st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/accidents1104x271.png?raw=true")
+        st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/accident_image_fp.png?raw=true")
     st.title(APP_TITLE)
     st.write('**Under Construction** - Please be aware we are currently building this app, so it will change over the next few weeks. Thank you for your patience.')
     st.write('Over the last few years improvements to roads in the UK have been implemented across the country in order to create a safer roading system with some great effect.  \nThe number of **road traffic collisions** are reported to be in decline.  \nUsing datasets from the Department of Transport, we hope to be able to uncover the probability of the severity of a collision.')
