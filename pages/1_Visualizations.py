@@ -116,7 +116,7 @@ def accidents_to_years_Line_overlap(df):
 def main():
         url = 'data/full_accident_data_time_series.parquet'
         df = get_data(url)
-        st.image("https://tinyurl.com/2eyvatxh")
+        st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Omdena-Logo.png?raw=true")
         accidents_to_years_Bar_subplots(df)
         accidents_to_years_Line_subplots(df)
         accidents_to_years_Line_overlap(df)
