@@ -84,6 +84,7 @@ def accidents_to_years_Line_subplots(df):
     st.write(fig)
 ##############################################################################
 
+
 def accidents_to_years_Line_overlap(df):
     df_slight = df[df['Accident_Severity']=='Slight'][['Accident_Severity', 'Year']].groupby('Year').count()
     df_slight.reset_index(inplace=True)
@@ -123,13 +124,26 @@ def main():
             <style>
                     h1#liverpool-chapter {
                     padding: 0;
-                    }
+                }
+                    h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
+                    border-bottom: none;
+                    font-variant: inherit;
+                }
+                    label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
+                    font-weight: bold;
+                    font-variant-caps: small-caps;
+                    border-bottom: 3px solid #4abd82;
+                }
             </style>
             """, unsafe_allow_html=True
     )
     url = 'data/full_accident_data_time_series.parquet'
     df = get_data(url)
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Omdena-Logo.png?raw=true")
+    col1, col2 = st.columns((1, 5))
+    with col1:
+        st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Omdena-Logo.png?raw=true")
+    with col2:
+        st.write('# Liverpool Chapter')
     accidents_to_years_Bar_subplots(df)
     accidents_to_years_Line_subplots(df)
     accidents_to_years_Line_overlap(df)
