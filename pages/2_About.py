@@ -41,7 +41,7 @@ with col1:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/pipeline.jpg?raw=true")
 with col2:
     st.markdown('### Predict RTC Severity')
-    st.markdown('st.markdown')
+    st.markdown('Using the data,  build an accurate model that can predict the severity of a collision')
     st.markdown('Bonus: create artificial data with improvements in hotspot areas and demonstrate whether or not this reduces the prediction severity ')
     st.markdown('### Geospatial Heatmap')
     st.markdown('Create a robust UK heat map to illustrate the collision hotspots.')
