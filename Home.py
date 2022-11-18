@@ -202,9 +202,6 @@ def main():
             div[data-testid="stSidebarNav"] li div::focus-visible {
                 background-color: rgba(151, 166, 195, 0.15);
             }
-            h1#liverpool {
-            padding: 0;
-            }
         </style>
         """, unsafe_allow_html=True
     )
