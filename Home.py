@@ -19,9 +19,9 @@ def display_accidents_count(
         total = df[accident_severity].count()
         # st.metric(metric_title,'{:,}'.format(total))
     if severity_status:
-        df=df[df['Accident_Severity'] == severity_status]
+        df = df[df['Accident_Severity'] == severity_status]
         df.drop_duplicates(inplace=True)
-        total=df[accident_severity].count()
+        total = df[accident_severity].count()
         st.metric(metric_title, '{:,}'.format(total))
 
 
