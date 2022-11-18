@@ -6,6 +6,23 @@ st.set_page_config(page_title='Home', layout='wide')
 st.markdown(
     """
     <style>
+        .block-container.css-18e3th9.egzxvld2 {
+        padding-top: 0;
+    }
+        header.css-vg37xl.e8zbici2 {
+        background: none;
+    }
+        span.css-10trblm.e16nr0p30 {
+        color: #2c39b1;
+    }
+        .css-1dp5vir.e8zbici1 {
+        background-image: linear-gradient(
+        90deg, rgb(130 166 192), rgb(74 189 130)
+        );
+    }
+        .css-tw2vp1.e1tzin5v0 {
+        gap: 10px;
+    }
         h1#liverpool-chapter {
         padding: 0;
     }

@@ -122,17 +122,34 @@ def main():
     st.markdown(
             """
             <style>
-                    h1#liverpool-chapter {
+                .block-container.css-18e3th9.egzxvld2 {
+                padding-top: 0;
+                }
+                header.css-vg37xl.e8zbici2 {
+                background: none;
+                }
+                span.css-10trblm.e16nr0p30 {
+                color: #2c39b1;
+                }
+                .css-1dp5vir.e8zbici1 {
+                background-image: linear-gradient(
+                90deg, rgb(130 166 192), rgb(74 189 130)
+                );
+                }
+                .css-tw2vp1.e1tzin5v0 {
+                gap: 10px;
+                }
+				h1#liverpool-chapter {
                     padding: 0;
                 }
-                    h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
-                    border-bottom: none;
-                    font-variant: inherit;
+				h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
+				border-bottom: none;
+				font-variant: inherit;
                 }
-                    label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
-                    font-weight: bold;
-                    font-variant-caps: small-caps;
-                    border-bottom: 3px solid #4abd82;
+				label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
+				font-weight: bold;
+				font-variant-caps: small-caps;
+				border-bottom: 3px solid #4abd82;
                 }
             </style>
             """, unsafe_allow_html=True
