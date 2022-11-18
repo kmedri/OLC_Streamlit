@@ -245,13 +245,13 @@ def main():
     with col2:
         display_accidents_count(
             df, year, severity_status, 'Accident_Severity',
-            pforce, '#  of Accidents'
+            pforce, 'Number of Accidents'
                 )
 
     with col3:
         display_casualties_count(
             df, year, severity_status, 'Number_of_Casualties',
-            pforce, '#  of Casualties'
+            pforce, 'Number of Casualties'
             )
 
     with col4:
