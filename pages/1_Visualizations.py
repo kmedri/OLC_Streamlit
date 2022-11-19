@@ -151,6 +151,15 @@ def main():
 				font-variant-caps: small-caps;
 				border-bottom: 3px solid #4abd82;
                 }
+                div[data-testid="stSidebarNav"] li div a {
+                margin-left: 1rem;
+                padding: 1rem;
+                width: 300px;
+                border-radius: 0.5rem;
+                }
+                div[data-testid="stSidebarNav"] li div::focus-visible {
+                    background-color: rgba(151, 166, 195, 0.15);
+                }
             </style>
             """, unsafe_allow_html=True
     )
