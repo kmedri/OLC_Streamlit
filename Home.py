@@ -202,6 +202,10 @@ def main():
             div[data-testid="stSidebarNav"] li div::focus-visible {
                 background-color: rgba(151, 166, 195, 0.15);
             }
+            svg.e1fb0mya1.css-fblp2m.ex0cdmw0 {
+            width: 2rem;
+            height: 2rem;
+            }
         </style>
         """, unsafe_allow_html=True
     )
