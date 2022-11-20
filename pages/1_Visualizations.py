@@ -139,17 +139,17 @@ def main():
                 .css-tw2vp1.e1tzin5v0 {
                 gap: 10px;
                 }
-				h1#liverpool-chapter {
+                h1#liverpool-chapter {
                     padding: 0;
                 }
-				h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
-				border-bottom: none;
-				font-variant: inherit;
+                h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
+                border-bottom: none;
+                font-variant: inherit;
                 }
-				label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
-				font-weight: bold;
-				font-variant-caps: small-caps;
-				border-bottom: 3px solid #4abd82;
+                label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
+                font-weight: bold;
+                font-variant-caps: small-caps;
+                border-bottom: 3px solid #4abd82;
                 }
                 div[data-testid="stSidebarNav"] li div a {
                 margin-left: 1rem;
@@ -160,7 +160,11 @@ def main():
                 div[data-testid="stSidebarNav"] li div::focus-visible {
                     background-color: rgba(151, 166, 195, 0.15);
                 }
-            </style>
+                svg.e1fb0mya1.css-fblp2m.ex0cdmw0 {
+                width: 2rem;
+                height: 2rem;
+                }
+                </style>
             """, unsafe_allow_html=True
     )
     url = 'data/full_accident_data_time_series.parquet'
