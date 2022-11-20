@@ -44,6 +44,10 @@ st.markdown(
         div[data-testid="stSidebarNav"] li div::focus-visible {
         background-color: rgba(151, 166, 195, 0.15);
         }
+        svg.e1fb0mya1.css-fblp2m.ex0cdmw0 {
+        width: 2rem;
+        height: 2rem;
+        }
     </style>
     """, unsafe_allow_html=True
 )
@@ -143,15 +147,15 @@ col1, col2 = st.columns((1, 1))
 with col1:
     st.write('### PL 1 - Severity Prediction')
     st.table(org1)
-    st.write('### PL 3 - Time Series Analysis & Prediction')
-    st.table(org3)
-    st.write('### Data Engineers')
-    st.table(org)
-with col2:
     st.write('### PL 2 - Geospatial Accident Data')
     st.table(org2)
+    st.write('### PL 3 - Time Series Analysis & Prediction')
+    st.table(org3)
+with col2:
     st.write('### PL 4 - Vehicle Analysis & Prediction')
     st.table(org4)
+    st.write('### Data Engineers')
+    st.table(org)
 
 st.markdown('Using Data Science we will develop and deploy a machine learning model in an effort to predict RTC severity:')
 st.markdown('- Preprocessing')
