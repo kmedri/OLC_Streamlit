@@ -48,6 +48,16 @@ st.markdown(
         width: 2rem;
         height: 2rem;
         }
+        h3#chapter-lead span.css-10trblm.e16nr0p30 {
+        font-variant: none;
+        border-bottom: 4px solid #82a6c0;
+        font-size: 1.5rem;
+        }
+        h3#cheif-engineer-and-educator span.css-10trblm.e16nr0p30 {
+        font-variant: none;
+        border-bottom: 4px solid #82a6c0;
+        font-size: 1.5rem;
+        }
     </style>
     """, unsafe_allow_html=True
 )
