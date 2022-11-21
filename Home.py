@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from streamlit_folium import st_folium
-from streamlit_option_menu import option_menu
 
 APP_TITLE = 'Predicting RTC severity using Machine Learning'
 
