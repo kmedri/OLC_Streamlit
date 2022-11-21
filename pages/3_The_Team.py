@@ -53,7 +53,7 @@ st.markdown(
         border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
         }
-        h3#cheif-engineer-and-educator span.css-10trblm.e16nr0p30 {
+        h3#chief-engineer-and-Educator span.css-10trblm.e16nr0p30 {
         font-variant: none;
         border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
