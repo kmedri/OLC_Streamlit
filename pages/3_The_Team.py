@@ -58,23 +58,25 @@ with col1:
 with col2:
     st.write('# Liverpool Chapter')
 
-col1, col2 = st.columns((1, 1))
-# with col1:
-#     col1, col2 = st.columns((1, 1))
-#     with col1:
-#         st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
-#     with col2:
-#         st.header('Rich Gregson - Chapter Lead')
-# with col2:
-#     col1, col2 = st.columns((1, 1))
-#     with col1:
-#         st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Salman_Khaliq.jpg.jpg?raw=true")
-#     with col2:
-#         st.header('Salmon Khaliq - Chapter Cheif Engineer')
+col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 
 with col1:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
-    st.header('Rich Gregson - Chapter Lead')
+    st.header('Rich Gregson')
+    st.subheader('Chapter Lead')
+    st.write('Some Text')
 with col2:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Salman_Khaliq.jpg.jpg?raw=true")
-    st.header('Salmon Khaliq - Chapter Cheif Engineer')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Salman_Khaliq.jpg?raw=true")
+    st.header('Salmon Khaliq')
+    st.subheader('Cheif Engineer and educator')
+    st.write('Some Text')
+with col3:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
+    st.header('Rich Gregson')
+    st.subheader('Chapter Lead')
+    st.write('Some Text')
+with col4:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
+    st.header('Rich Gregson')
+    st.subheader('Chapter Lead')
+    st.write('Some Text')
