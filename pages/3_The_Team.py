@@ -53,7 +53,7 @@ st.markdown(
         border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
         }
-        h3#chief-engineer-and-Educator span.css-10trblm.e16nr0p30 {
+        h3#chief-engineer-and-educator span.css-10trblm.e16nr0p30 {
         font-variant: none;
         border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
@@ -81,12 +81,11 @@ with col2:
     st.subheader('Chief Engineer and Educator')
     st.write('Some Text')
 with col3:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
-    st.header('Rich Gregson')
-    st.subheader('Chapter Lead')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Owais_Tahir.jpg?raw=true")
+    st.header('Owais Tahir')
+    st.subheader('Team Member')
     st.write('Some Text')
 with col4:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
-    st.header('Rich Gregson')
-    st.subheader('Chapter Lead')
-    st.write('Some Text')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/kevin_medri.jpg?raw=true")
+    st.header('Kevin Medri')
+    st.subheader('Team Mem
