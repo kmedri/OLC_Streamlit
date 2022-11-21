@@ -50,12 +50,12 @@ st.markdown(
         }
         h3#chapter-lead span.css-10trblm.e16nr0p30 {
         font-variant: none;
-        border-bottom: 4px solid #82a6c0;
+        border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
         }
         h3#cheif-engineer-and-educator span.css-10trblm.e16nr0p30 {
         font-variant: none;
-        border-bottom: 4px solid #82a6c0;
+        border-bottom: 2px solid #82a6c0;
         font-size: 1.5rem;
         }
     </style>
@@ -78,7 +78,7 @@ with col1:
 with col2:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Salman_Khaliq.jpg?raw=true")
     st.header('Salmon Khaliq')
-    st.subheader('Cheif Engineer and educator')
+    st.subheader('Chief Engineer and Educator')
     st.write('Some Text')
 with col3:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/rich_gregson.jpg?raw=true")
