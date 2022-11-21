@@ -89,3 +89,4 @@ with col4:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/kevin_medri.jpg?raw=true")
     st.header('Kevin Medri')
     st.subheader('Team Member')
+    st.write('Some Text')
