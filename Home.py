@@ -194,13 +194,13 @@ def main():
         float: right;
         }
         div[data-testid="stSidebarNav"] li div a {
-            margin-left: 1rem;
-            padding: 1rem;
-            width: 300px;
-            border-radius: 0.5rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 300px;
+        border-radius: 0.5rem;
         }
         div[data-testid="stSidebarNav"] li div::focus-visible {
-            background-color: rgba(151, 166, 195, 0.15);
+        background-color: rgba(151, 166, 195, 0.15);
         }
         svg.e1fb0mya1.css-fblp2m.ex0cdmw0 {
         width: 2rem;
