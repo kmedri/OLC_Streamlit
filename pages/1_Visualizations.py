@@ -41,7 +41,7 @@ def accidents_to_years_Bar_subplots(df):
                 x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
         ), row=3, col=1)
 
-    fig.update_layout(autosize=True)
+    fig.update_layout(width=1100, height=1200)
 
 
 # fig.update_xaxes(title_text="<b>Years</b>")
@@ -74,7 +74,7 @@ def accidents_to_years_Line_subplots(df):
             x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
             ), row=3, col=1)
 
-    fig.update_layout(width=1100, height=800)#, title='Accidents vs Years')
+    fig.update_layout(width=1100, height=1000)#, title='Accidents vs Years')
 
     # fig.update_xaxes(title_text="<b>Years</b>")
     # fig.update_yaxes(title_text="<b>Accidents Count</b> ", secondary_y=False)
@@ -114,6 +114,14 @@ def accidents_to_years_Line_overlap(df):
     fig.update_yaxes(title_text="<b>secondary</b> Y - axis ", secondary_y=True)
 
     st.header('Accidents vs Years (Line Graphs Overlap)')
+    st.write(fig)
+##############################################################################
+
+
+def urban_rural(df):
+    fig=px.histogram(df, x="Accident_Severity", color="Urban_or_Rural_Area")
+    fig.update_layout(width=1100, height=600)
+    st.header('Accidents Count in Urban and Rural Areas')
     st.write(fig)
 ##############################################################################
 
@@ -176,7 +184,8 @@ def main():
         st.write('# Liverpool Chapter')
     accidents_to_years_Bar_subplots(df)
     accidents_to_years_Line_subplots(df)
-    accidents_to_years_Line_overlap(df)
+    #accidents_to_years_Line_overlap(df)
+    urban_rural(df)
 
 
 ##############################################################################
