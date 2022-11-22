@@ -4,8 +4,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from streamlit_folium import st_folium
-
-APP_TITLE = 'Predicting RTC severity using Machine Learning'
+st.set_page_config(page_title='Home', layout='wide')
 
 
 def display_accidents_count(
@@ -267,5 +266,6 @@ def main():
 
 
 if __name__ == "__main__":
-    st.set_page_config(page_title='Home', layout='wide')
+    APP_TITLE = 'Predicting RTC severity using Machine Learning'
+
     main()
