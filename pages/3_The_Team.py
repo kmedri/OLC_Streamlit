@@ -156,12 +156,7 @@ with col4:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Wajeeha_Imtiaz.gif?raw=true")
     st.header('Wajeeha Imtiazi')
     st.subheader('Team Member')
-    st.write('Wajeeha Imtiaz- A Computer Science student from NUST.')
-    st.write(' ')
-    st.write('Deeply interested in the Artificial Intelligence and Machine Learning domain.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Wajeeha Imtiaz- A Computer Science student from NUST. Student at National University of Sciences and Technology (NUST). NUST Cyber Security Club. Deeply interested in the Artificial Intelligence and Machine Learning domain. National University of Sciences & Technology (NUST), located in the heart of Islamabad.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/wajeeha-imtiaz](https://www.linkedin.com/in/wajeeha-imtiaz-37a7ab197/)',
@@ -172,39 +167,27 @@ with col1:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Enyinnaya_Benjamin_Uzuegbu.jpg?raw=true")
     st.header('Enyinnaya Uzuegbu')
     st.subheader('Team Member')
-    st.write('Its Enyinnaya Benjamin uzuegbu from Omdena Liverpool chapter.')
-    st.write(' ')
-    st.write(' I have one year experience in data science. Having graduated from University of East London.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Its Enyinnaya Benjamin uzuegbu from Omdena Liverpool chapter. I have one year experience in data science. Having graduated from University of East London. Over 2 years of experience in environmental industry, gaining valuable transferable skills in relationship building, strategic planning, data analysis, project management.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/enyinnaya-uzuegbu](https://www.linkedin.com/in/enyinnaya-benjamin-uzuegbu/)',
         unsafe_allow_html=True
     )
 with col2:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
-    st.header('Jarukamol')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Michael_Welter.jpg?raw=true")
+    st.header('Michael Welter')
     st.subheader('Team Member')
-    st.write('Jarukamol Dawkrajai is a PhD student.')
-    st.write(' ')
-    st.write('Working in chemical process fault detection using deep learning.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Data Center Operations Server Engineer at AWS | Certified Data Scientist. Philadelphia, USA Chapter – Data Science for Climate Change: Mitigate Greenhouse Gases Emissions by reducing energy consumption of buildings (part 1). Philadelphia, USA Chapter – Data Science for Climate Change: Reducing energy consumption of buildings (part 2)')
     st.write(
-        fa_em, '<a href="mailto:ormjarukamol@gmail.com">Email Jarukamol</a>',
+        fa_li,
+        '[www.linkedin.com/in/michaeltwelter](https://www.linkedin.com/in/michaeltwelter/)',
         unsafe_allow_html=True
     )
 with col3:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/lavanya-galgali.jpg?raw=true")
-    st.header('Lavanya')
+    st.header('Lavanya Galgali')
     st.subheader('Team Member')
     st.write('A BE graduate with 6 yrs of HR domain experience and exploring data in Machine learning  & AI. Skilled in handling end-to-end HR activities and maintaining cordial relationship with the employees. A dynamic HR Professional with around 6 years of rich experience in HR Generalist, HR Analyst, Proficient in MS-Office tools')
-    st.write(' ')
     st.write(
         fa_li,
         '[www.linkedin.com/in/lavanya-galgali](https://www.linkedin.com/in/lavanya-galgali-2a684b4/)',
@@ -225,9 +208,7 @@ with col1:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Shrawan_Baral.jpg?raw=true")
     st.header('Shrawan Baral')
     st.subheader('Team Member')
-    st.write('Avid learner, love exploring and exploiting knowledge, who is always fascinated by the technological advancements and their use for uplifting peoples quality of life, nature and surrounding. A keen observer of advancements and their impacts.')
-    st.write(' ')
-    st.write(' ')
+    st.write('ML practitioner :: Cybersec :: Software Engineer. Avid learner, love exploring and exploiting knowledge, who is always fascinated by the technological advancements and their use for uplifting peoples quality of life, nature and surrounding. A keen observer of advancements and their impacts.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/shrawan-baral](https://www.linkedin.com/in/shrawan-baral/)',
@@ -237,133 +218,86 @@ with col2:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Mahrukh_Waqar.jpg?raw=true")
     st.header('Mahrukh Waqar')
     st.subheader('Team Member')
-    st.write('Mahrukh Waqar is a data science enthusiast who worked on various projects.')
-    st.write(' ')
-    st.write('She is a keen observer and tends to understand problems to build their solutions.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Data Analyst | Data Scientist | ML Development. Mahrukh Waqar is a data science enthusiast who worked on various projects. She is a keen observer and tends to understand problems to build their solutions. Fluent in English and basic understanding of German language. Google Badges: https://g.dev/mahrukhw')
     st.write(
         fa_li,
         '[www.linkedin.com/in/mahrukhw](https://www.linkedin.com/in/mahrukhw/)',
         unsafe_allow_html=True
     )
 with col3:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
-    st.header('Djazila KORTI')
-    st.subheader('Team Member')
-    st.write('Teaching practical work for bachelor degree students. (local networks) ')
-    st.write(' ')
-    st.write('Teaching practical work for Master 2 students. (Mobile and Wireless Networks)')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(
-        fa_li,
-        '[www.linkedin.com/in/djazila-souhila-korti](https://www.linkedin.com/in/djazila-souhila-korti-1470521b9/)',
-        unsafe_allow_html=True
-    )
-with col4:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
-    st.header('Name')
-    st.subheader('Team Member')
-    st.write('Virtual Reality Software Engineer. Skilled in Unity, 3D Modelling in Blender, Engineering, VR Development and Game Development. Strong engineering professional with a Bachelor of Engineering - BE focused in Computer Software Engineering from NED University of Engineering and Technology.')
-    st.write(
-        fa_li,
-        '[www.linkedin.com/in/name](https://www.linkedin.com/in/name/)',
-        unsafe_allow_html=True
-    )
-
-with col1:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Shrawan_Baral.jpg?raw=true")
-    st.header('Pransenjit Chowdhury')
-    st.subheader('Team Member')
-    st.write('I accept with pleasure the challenges and goals assigned to me.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(
-        fa_li,
-        '[www.linkedin.com/in/prasenjit-chowdhury](https://www.linkedin.com/in/prasenjit-chowdhury-b3049050/)',
-        unsafe_allow_html=True
-    )
-with col2:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Michael_Welter.jpg?raw=true")
-    st.header('Michael Welter')
-    st.subheader('Team Member')
-    st.write('Data Center Operations Server Engineer at AWS | Certified Data Scientist.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(
-        fa_li,
-        '[www.linkedin.com/in/michaeltwelter](https://www.linkedin.com/in/michaeltwelter/)',
-        unsafe_allow_html=True
-    )
-with col3:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Gordana_Vujović.jpg?raw=true")
     st.header('Gordana Vujović')
     st.subheader('Team Member')
-    st.write('Im a dedicated and passionate engineer working with Machine Learning / AI and have a great interest in algorithm development, technology, and programming. I like new challenges and stay up to date on whats happening in modern platforms and development frameworks. As a person Im flexible, positive, open, dare to say what I think, and like working in a group. Im driven by solving problems and like to come up with improvement suggestions.')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Im a dedicated and passionate engineer working with Machine Learning / AI and have a great interest in algorithm development, technology, and programming. I like new challenges and stay up to date on whats happening in modern platforms and development frameworks. As a person Im flexible, positive, open, dare to say what I think, and like.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/gordana-vujovic-665a42b5](https://www.linkedin.com/in/gordana-vujovic-665a42b5/)',
         unsafe_allow_html=True
     )
 with col4:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Jawairia_Rasheed.jpg?raw=true")
-    st.header('Jawairia Rasheed')
-    st.subheader('Team Member')
-    st.write('Data Scientist. I am data and machine learning practitioner using Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.')
-    st.write(
-        fa_li,
-        '[www.linkedin.com/in/jawairia-rasheed](https://www.linkedin.com/in/jawairia-rasheed-159ab755/)',
-        unsafe_allow_html=True
-    )
-
-with col1:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Ayoub_BERDEDDOUCH.jpg?raw=true")
-    st.header('Ayoub BERDEDDOUCH')
+    st.header('Ayoub B.')
     st.subheader('Team Member')
-    st.write('Data Scientist | Lead ML Engineer @Omdena | 🐍 Django | ☁️ Engineer | Researcher Scientist | NaaS.ai Contributor')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
+    st.write('Associate Member Omdena. Google Cloud Associate Engineering Mentor. Data Scientist | Lead ML Engineer @Omdena | 🐍 Django | ☁️ Engineer | Researcher Scientist | NaaS.ai Contributor. PhD Researcher Scientist. 👨‍💻 Data Scientist 👨‍💻 Ph.D. Candidate 👨‍💻 Python ~Django Dev👨‍💻 Cloud Engineer 📧 : Envoie moi un Message en privé.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/ayoub-berdeddouch](https://www.linkedin.com/in/ayoub-berdeddouch/)',
         unsafe_allow_html=True
     )
+
+with col1:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Pransenjit_Chowdhury.jpg?raw=true")
+    st.header('Pransenjit C.')
+    st.subheader('Team Member')
+    st.write('I accept with pleasure the challenges and goals assigned to me. Service Management AnalystService Management Analyst Kantar IT Partnership. IT AnlaystIT Anlayst HSBC. Bachelors degree, Information technology. 1729 Original1729 Original Analytics Vidhya. AWS Academy Graduate - AWS Academy Cloud Architecting')
+    st.write(
+        fa_li,
+        '[www.linkedin.com/in/prasenjit-chowdhury](https://www.linkedin.com/in/prasenjit-chowdhury-b3049050/)',
+        unsafe_allow_html=True
+    )
 with col2:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Michael_Welter.jpg?raw=true")
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Jawairia_Rasheed.jpg?raw=true")
+    st.header('Jawairia Rasheed')
+    st.subheader('Team Member')
+    st.write('Data Scientist. I am data and machine learning practitioner using Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn. Lecturer University of Gujrat, Pakistan. Lab EngineerLab Engineer SEECS. College of Electrical & Mechanical Engineering NUST. Masters Degree, Computer Software Engineering')
+    st.write(
+        fa_li,
+        '[www.linkedin.com/in/jawairia-rasheed](https://www.linkedin.com/in/jawairia-rasheed-159ab755/)',
+        unsafe_allow_html=True
+    )
+with col3:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
     st.header('JUN T.')
     st.subheader('Team Member')
     st.write('👨‍💻 Programmer')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
-    st.write(' ')
     st.write(
         fa_li,
         '[www.linkedin.com/in/jun-t](https://www.linkedin.com/in/jun-t-82376b257)',
         unsafe_allow_html=True
     )
+with col4:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
+    st.header('Djazila KORTI')
+    st.subheader('Team Member')
+    st.write('Teaching practical work for bachelor degree students. (local networks) ')
+    st.write('Teaching practical work for Master 2 students. (Mobile and Wireless Networks)')
+    st.write(
+        fa_li,
+        '[www.linkedin.com/in/djazila-souhila-korti](https://www.linkedin.com/in/djazila-souhila-korti-1470521b9/)',
+        unsafe_allow_html=True
+    )
+
+with col1:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
+    st.header('Jarukamol')
+    st.subheader('Team Member')
+    st.write('Jarukamol Dawkrajai is a PhD student. Working in chemical process fault detection using deep learning.')
+    st.write(
+        fa_em, '<a href="mailto:ormjarukamol@gmail.com">Email Jarukamol</a>',
+        unsafe_allow_html=True
+    )
+with col2:
+    st.write(' ')
 with col3:
     st.write(' ')
 with col4:
