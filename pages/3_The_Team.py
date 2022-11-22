@@ -5,7 +5,7 @@ st.set_page_config(page_title='The Team', layout='wide')
 
 st.markdown(
     """
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .block-container.css-18e3th9.egzxvld2 {
         padding-top: 0;
@@ -61,10 +61,10 @@ st.markdown(
 )
 
 fa_li = """
-<i class="fa-brands fa-linkedin"></i>
+<i class="fab fa-linkedin"></i>
 """
 fa_em = """
-<i class="fad fa-envelope"></i>
+<i class="far fa-envelope"></i>
 """
 
 col1, col2 = st.columns((1, 5))
@@ -140,13 +140,14 @@ with col1:
     st.write(' ')
     st.write(' ')
     st.write(' ')
-    st.write(fa_em, '[www.linkedin.com/in/enyinnaya-uzuegbu](https://www.linkedin.com/in/enyinnaya-benjamin-uzuegbu/)', unsafe_allow_html=True)
+    st.write(fa_li, '[www.linkedin.com/in/enyinnaya-uzuegbu](https://www.linkedin.com/in/enyinnaya-benjamin-uzuegbu/)', unsafe_allow_html=True)
 with col2:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
     st.header('Jarukamol')
     st.subheader('Team Member')
-    st.write('Jarukamol Dawkrajai is a PhD student working in chemical process fault detection using deep learning.')
+    st.write('Jarukamol Dawkrajai is a PhD student.')
     st.write(' ')
+    st.write('Working in chemical process fault detection using deep learning.')
     st.write(' ')
     st.write(' ')
     st.write(' ')
@@ -157,17 +158,52 @@ with col3:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
     st.header('Lavanya')
     st.subheader('Team Member')
-    st.write('Lavanya Galgali is a BE graduate with 6 yrs of HR domain experience and exploring data in Machine learning  & AI.')
-    st.write(fa_li, '[www.linkedin.com/in/kevinmedri](https://www.linkedin.com/in/kevinmedri/)', unsafe_allow_html=True)
+    st.write('Lavanya Galgali is a BE graduate.')
+    st.write(' ')
+    st.write('With 6 yrs of HR domain experience and exploring data in Machine learning  & AI. ')
     st.write(' ')
     st.write(' ')
     st.write(' ')
     st.write(' ')
     st.write(' ')
+    st.write(fa_em, '<a href="mailto:lavanyagalgali@gmail.com">Email Lavanya</a>', unsafe_allow_html=True)
+with col4:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Raafe_Asad.jpg?raw=true")
+    st.header('Raafe Asad')
+    st.subheader('Team Member')
+    st.write('Virtual Reality Software Engineer. Skilled in Unity, 3D Modelling in Blender, Engineering, VR Development and Game Development. Strong engineering professional with a Bachelor of Engineering - BE focused in Computer Software Engineering from NED University of Engineering and Technology.')
+    st.write(fa_li, '[www.linkedin.com/in/raafe-asad](https://www.linkedin.com/in/raafe-asad-01b08114b/)', unsafe_allow_html=True)
+
+with col1:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Shrawan_Baral.jpg?raw=true")
+    st.header('Shrawan Baral')
+    st.subheader('Team Member')
+    st.write('Avid learner, love exploring and exploiting knowledge, who is always fascinated by the technological advancements and their use for uplifting peoples quality of life, nature and surrounding. A keen observer of advancements and their impacts.')
     st.write(' ')
+    st.write(' ')
+    st.write(fa_li, '[www.linkedin.com/in/shrawan-baral](https://www.linkedin.com/in/shrawan-baral/)', unsafe_allow_html=True)
+with col2:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Mahrukh_Waqar.jpg?raw=true")
+    st.header('Mahrukh Waqar')
+    st.subheader('Team Member')
+    st.write('Mahrukh Waqar is a data science enthusiast who worked on various projects. She is a keen observer and tends to understand problems to build their solutions.')
+    st.write(fa_li, '[www.linkedin.com/in/mahrukhw](https://www.linkedin.com/in/mahrukhw/)', unsafe_allow_html=True)
+with col3:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
+    st.header('Lavanya')
+    st.subheader('Team Member')
+    st.write('Lavanya Galgali is a BE graduate.')
+    st.write(' ')
+    st.write('With 6 yrs of HR domain experience and exploring data in Machine learning  & AI. ')
+    st.write(' ')
+    st.write(' ')
+    st.write(' ')
+    st.write(' ')
+    st.write(' ')
+    st.write(fa_li, '<a href="mailto:lavanyagalgali@gmail.com">Email Lavanya</a>', unsafe_allow_html=True)
 with col4:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
-    st.header('Kevin Medri')
+    st.header('Raafe Asad')
     st.subheader('Team Member')
-    st.write('I am a data specialist working with data from varied market areas. I have years of domain knowledge and am always committed to the projects at hand. I am able to retrieve great business insights, am well versed in stakeholder presentations and working with and managing teams. I have a sharp eye for detail and have great communication skills.')
-    st.write(fa_li, '[www.linkedin.com/in/kevinmedri](https://www.linkedin.com/in/kevinmedri/)', unsafe_allow_html=True)
+    st.write('Virtual Reality Software Engineer. Skilled in Unity, 3D Modelling in Blender, Engineering, VR Development and Game Development. Strong engineering professional with a Bachelor of Engineering - BE focused in Computer Software Engineering from NED University of Engineering and Technology.')
+    st.write(fa_li, '[www.linkedin.com/in/raafe-asad](https://www.linkedin.com/in/raafe-asad-01b08114b/)', unsafe_allow_html=True)
