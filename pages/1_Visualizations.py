@@ -41,7 +41,7 @@ def accidents_to_years_Bar_subplots(df):
                 x=df_fatal['Year'], y=df_fatal['Accident_Severity'], name='Fatal Accidents'
         ), row=3, col=1)
 
-    fig.update_layout(width=1100, height=800)
+    fig.update_layout(autosize=True)
 
 
 # fig.update_xaxes(title_text="<b>Years</b>")
