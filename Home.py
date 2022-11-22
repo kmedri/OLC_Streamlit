@@ -132,8 +132,8 @@ def get_data(url):
 
 
 # Load the DATA.
-    url = 'data/full_accident_data_time_series.parquet'
-    df = get_data(url) 
+url = 'data/full_accident_data_time_series.parquet'
+df = get_data(url) 
 
 
 def main():
