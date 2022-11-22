@@ -124,7 +124,7 @@ def map_rtc(data, year, pforce, severity):
     return st_map
 
 
-@st.experimental_memo
+@st.cache
 def get_data(url):
     df = pd.read_parquet(url)
     return df
