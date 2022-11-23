@@ -29,7 +29,7 @@ st.markdown(
         h1#liverpool-chapter span.css-10trblm.e16nr0p30 {
         border-bottom: none;
         font-variant: inherit;
-    }
+        }
         label.css-cgyhhy.effi0qh3, span.css-10trblm.e16nr0p30 {
         font-weight: bold;
         font-variant-caps: small-caps;
