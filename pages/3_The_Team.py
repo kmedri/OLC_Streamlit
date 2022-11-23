@@ -187,7 +187,7 @@ with col3:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/lavanya-galgali.jpg?raw=true")
     st.header('Lavanya Galgali')
     st.subheader('Team Member')
-    st.write('A BE graduate with 6 yrs of HR domain experience and exploring data in Machine learning  & AI. Skilled in handling end-to-end HR activities and maintaining cordial relationship with the employees. A dynamic HR Professional with around 6 years of rich experience in HR Generalist, HR Analyst, Proficient in MS-Office tools')
+    st.write('Data Science associate with 6+ yrs of experience in HR domain. Experitse in Python, Machine learning, data visualization and PostgreSql for large scale data analysis and model building. Experience with Machine Learning algorithms to create the best working models. Proven understanding of predictive analytics.')
     st.write(
         fa_li,
         '[www.linkedin.com/in/lavanya-galgali](https://www.linkedin.com/in/lavanya-galgali-2a684b4/)',
