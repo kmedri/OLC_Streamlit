@@ -1,9 +1,9 @@
-import cufflinks
 import folium as flm
 import pandas as pd
-import plotly.express as px
 import streamlit as st
 from streamlit_folium import st_folium
+
+APP_TITLE = 'Predicting RTC severity using Machine Learning'
 st.set_page_config(page_title='Home', layout='wide')
 
 
@@ -124,17 +124,18 @@ def map_rtc(data, year, pforce, severity):
     return st_map
 
 
+# Load the DATA and cache.
 @st.cache
 def get_data(url):
     df = pd.read_parquet(url)
     return df
 
 
-def main():
-    # Load the DATA.
-    url = 'data/full_accident_data_time_series.parquet'
-    df = get_data(url)
+url = 'data/full_accident_data_time_series.parquet'
+df = get_data(url)
 
+
+def main():
     # Colors:
     # Blue = #182D40
     # Light Blue = #82a6c0
@@ -264,6 +265,4 @@ def main():
 
 
 if __name__ == "__main__":
-    APP_TITLE = 'Predicting RTC severity using Machine Learning'
-
     main()
