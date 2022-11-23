@@ -3,20 +3,11 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 ##############################################################################
 ############################### FUNCTIONS ####################################
 ##############################################################################
-
-
-def get_data(url):
-    df = pd.read_parquet(url)
-
-    return df
-
-##############################################################################
+st.set_page_config(page_title='Visualizations', layout='wide')
 
 
 def accidents_to_years_Bar_subplots(df):
@@ -53,16 +44,16 @@ def accidents_to_years_Bar_subplots(df):
 
 
 def accidents_to_years_Line_subplots(df):
-    df_slight=df[df['Accident_Severity']=='Slight'][['Accident_Severity','Year']].groupby('Year').count()
+    df_slight = df[df['Accident_Severity'] == 'Slight'][['Accident_Severity', 'Year']].groupby('Year').count()
     df_slight.reset_index(inplace=True)
 
-    df_serious=df[df['Accident_Severity']=='Serious'][['Accident_Severity','Year']].groupby('Year').count()
+    df_serious = df[df['Accident_Severity'] == 'Serious'][['Accident_Severity', 'Year']].groupby('Year').count()
     df_serious.reset_index(inplace=True)
 
-    df_fatal=df[df['Accident_Severity']=='Fatal'][['Accident_Severity','Year']].groupby('Year').count()
+    df_fatal = df[df['Accident_Severity'] == 'Fatal'][['Accident_Severity', 'Year']].groupby('Year').count()
     df_fatal.reset_index(inplace=True)
 
-    fig=make_subplots(rows=3, cols=1, x_title='Years', y_title='Accidents Count')
+    fig = make_subplots(rows=3, cols=1, x_title='Years', y_title='Accidents Count')
 
     fig.add_trace(go.Scatter(
             x=df_slight['Year'], y=df_slight['Accident_Severity'], name='Slight Accidents'
@@ -119,11 +110,22 @@ def accidents_to_years_Line_overlap(df):
 
 
 def urban_rural(df):
-    fig=px.histogram(df, x="Accident_Severity", color="Urban_or_Rural_Area")
+    fig = px.histogram(df, x="Accident_Severity", color="Urban_or_Rural_Area")
     fig.update_layout(width=1100, height=600)
     st.header('Accidents Count in Urban and Rural Areas')
     st.write(fig)
 ##############################################################################
+
+
+# Load the DATA and cache.
+@st.cache
+def get_data(url):
+    df = pd.read_parquet(url)
+    return df
+
+
+url = 'data/full_accident_data_time_series.parquet'
+df = get_data(url)
 
 
 def main():
@@ -175,8 +177,6 @@ def main():
                 </style>
             """, unsafe_allow_html=True
     )
-    url = 'data/full_accident_data_time_series.parquet'
-    df = get_data(url)
     col1, col2 = st.columns((1, 5))
     with col1:
         st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Omdena-Logo.png?raw=true")
@@ -184,7 +184,7 @@ def main():
         st.write('# Liverpool Chapter')
     accidents_to_years_Bar_subplots(df)
     accidents_to_years_Line_subplots(df)
-    #accidents_to_years_Line_overlap(df)
+    # accidents_to_years_Line_overlap(df)
     urban_rural(df)
 
 
@@ -193,5 +193,4 @@ def main():
 ##############################################################################
 
 if __name__ == "__main__":
-    st.set_page_config(page_title='Visualizations', layout='wide')
     main()
