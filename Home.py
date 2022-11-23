@@ -4,8 +4,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from streamlit_folium import st_folium
-
-APP_TITLE = 'Predicting RTC severity using Machine Learning'
+st.set_page_config(page_title='Home', layout='wide')
 
 
 def display_accidents_count(
@@ -132,6 +131,9 @@ def get_data(url):
 
 
 def main():
+    # Load the DATA.
+    url = 'data/full_accident_data_time_series.parquet'
+    df = get_data(url)
 
     # Colors:
     # Blue = #182D40
@@ -218,10 +220,6 @@ def main():
     st.write('**Under Construction** - Please be aware we are currently building this app, so it will change over the next few weeks. Thank you for your patience.')
     st.write('Over the last few years improvements to roads in the UK have been implemented across the country in order to create a safer roading system with some great effect.  \nThe number of **road traffic collisions** are reported to be in decline.  \nUsing datasets from the Department of Transport, we hope to be able to uncover the probability of the severity of a collision.')
 
-    # Load the DATA.
-    url = 'data/full_accident_data_time_series.parquet'
-    df = get_data(url)
-
     # Create lists for dropdowns.
     year_list = list(df['Year'].unique())
     year_list.sort()
@@ -266,5 +264,6 @@ def main():
 
 
 if __name__ == "__main__":
-    st.set_page_config(page_title='Home', layout='wide')
+    APP_TITLE = 'Predicting RTC severity using Machine Learning'
+
     main()
