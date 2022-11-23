@@ -154,10 +154,10 @@ def main():
         text-align: center;
         color: #2c39b1;
         }
-        .css-fk4es0 {
+        .css-1dp5vir.e8zbici1 {
         background-image: linear-gradient(
-            90deg, rgb(130 166 192), rgb(74 189 130)
-            );
+        90deg, rgb(130 166 192), rgb(74 189 130)
+        );
         }
         .css-tw2vp1.e1tzin5v0 {
         gap: 10px;
