@@ -297,7 +297,10 @@ with col1:
         unsafe_allow_html=True
     )
 with col2:
-    st.write(' ')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/retin_kumar.jpg?raw=true")
+    st.header('Retin Kumar')
+    st.subheader('Team Member')
+    st.write('Retin P Kumar is a Data Scientist who likes solving business use cases that requires text processing and Natural Language Processing. Retin has deployed multiple end to end apps across various cloud platforms and is currently  interested in working on massive scale machine learningprojects on NLP.')
 with col3:
     st.write(' ')
 with col4:
