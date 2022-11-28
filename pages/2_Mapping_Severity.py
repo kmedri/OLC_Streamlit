@@ -235,14 +235,14 @@ def main():
         year_list = list(df['Year'].unique())
         year_list.sort()
         year = st.selectbox(
-            'Year of Accident', year_list, len(year_list) - 1,
+            'Year of Collision', year_list, len(year_list) - 1,
             help='Select the year of collision'
         )
     with col2:
         pforce_list = list(df['Police_Force'].unique())
         pforce_list.sort()
         pforce = st.selectbox(
-            'Police Force', pforce_list, len(pforce_list) - 1,
+            'Local Area', pforce_list, len(pforce_list) - 1,
             help='Choose the area of the collision'
             )
     with col3:
@@ -257,12 +257,12 @@ def main():
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        display_year(df, year, 'Year of Accidents')  # f'Year{year}')
+        display_year(df, year, 'Year of Collisions')  # f'Year{year}')
 
     with col2:
         display_accidents_count(
             df, year, sev, 'Accident_Severity',
-            pforce, 'Number of Accidents'
+            pforce, 'Number of Collisions'
                 )
 
     with col3:
