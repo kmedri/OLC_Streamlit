@@ -228,30 +228,31 @@ def main():
         st.write('# Liverpool Chapter')
 
     st.markdown('# Mapping Severity')
+
     col1, col2, col3 = st.columns(3)
     with col1:
         # Create lists for dropdowns.
         year_list = list(df['Year'].unique())
         year_list.sort()
         year = st.selectbox(
-            'Year of Accident', year_list, len(year_list) - 1
+            'Year of Accident', year_list, len(year_list) - 1,
+            help='Select the year of collision'
         )
     with col2:
         pforce_list = list(df['Police_Force'].unique())
         pforce_list.sort()
         pforce = st.selectbox(
-            'Police Force', pforce_list, len(pforce_list) - 1
+            'Police Force', pforce_list, len(pforce_list) - 1,
+            help='Choose the area of the collision'
             )
     with col3:
         sev_list = list(df['Accident_Severity'].unique())
         sev_list.sort()
         sev = st.selectbox(
-            'Severity Status', sev_list, len(sev_list) - 1
+            'Severity Status', sev_list, len(sev_list) - 1,
+            help='Choose the severity of the collision'
             )
-        # # Create radio buttons.
-        # severity_status = st.radio(
-        #     'Severity Status', ['Slight', 'Serious', 'Fatal']
-        #     )
+
     # Set columns.
     col1, col2, col3, col4 = st.columns(4)
 
