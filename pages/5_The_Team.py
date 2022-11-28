@@ -259,20 +259,20 @@ with col2:
     st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/Jawairia_Rasheed.jpg?raw=true")
     st.header('Jawairia Rasheed')
     st.subheader('Team Member')
-    st.write('Data Scientist. I am data and machine learning practitioner using Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn. Lecturer University of Gujrat, Pakistan. Lab EngineerLab Engineer SEECS. College of Electrical & Mechanical Engineering NUST. Masters Degree, Computer Software Engineering')
+    st.write('Jawairia Rasheed, Data Scientist. I am data and machine learning practitioner using Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn. Lecturer University of Gujrat, Pakistan. Lab EngineerLab Engineer SEECS. College of Electrical & Mechanical Engineering NUST. Masters Degree, Computer Software Engineering')
     st.write(
         fa_li,
         '[www.linkedin.com/in/jawairia-rasheed](https://www.linkedin.com/in/jawairia-rasheed-159ab755/)',
         unsafe_allow_html=True
     )
 with col3:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
-    st.header('JUN T.')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/retin_kumar.jpg?raw=true")
+    st.header('Retin Kumar')
     st.subheader('Team Member')
-    st.write('👨‍💻 Programmer')
+    st.write('Retin P Kumar is a Data Scientist who likes solving business use cases that requires text processing and Natural Language Processing. Retin has deployed multiple end to end apps across various cloud platforms and is currently  interested in working on massive scale machine learningprojects on NLP.')
     st.write(
         fa_li,
-        '[www.linkedin.com/in/jun-t](https://www.linkedin.com/in/jun-t-82376b257)',
+        '[www.linkedin.com/in/retinpkumar](https://www.linkedin.com/in/retinpkumar/)',
         unsafe_allow_html=True
     )
 with col4:
@@ -297,10 +297,15 @@ with col1:
         unsafe_allow_html=True
     )
 with col2:
-    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/retin_kumar.jpg?raw=true")
-    st.header('Retin Kumar')
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/head-placeholder.png?raw=true")
+    st.header('JUN T.')
     st.subheader('Team Member')
-    st.write('Retin P Kumar is a Data Scientist who likes solving business use cases that requires text processing and Natural Language Processing. Retin has deployed multiple end to end apps across various cloud platforms and is currently  interested in working on massive scale machine learningprojects on NLP.')
+    st.write('👨‍💻 Programmer')
+    st.write(
+        fa_li,
+        '[www.linkedin.com/in/jun-t](https://www.linkedin.com/in/jun-t-82376b257)',
+        unsafe_allow_html=True
+    )
 with col3:
     st.write(' ')
 with col4:
