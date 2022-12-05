@@ -5,10 +5,10 @@ import pandas as pd
 st.set_page_config(page_title='Time Series', layout='wide')
 
 
-# @st.cache
 def load_time_series(url):
     html_string = open(url)
     return html_string
+
 
 st.markdown(
     """
@@ -83,5 +83,9 @@ with col2:
     st.write('# Liverpool Chapter')
 
 st.markdown('# Time Series')
-components.html(load_time_series('data/map_test_light.html').read())
-# st.markdown(load_time_series('data/map_test_light.html'), unsafe_allow_html=True)
+
+col1, col2 = st.columns((1, 1))
+with col1:
+    components.html(load_time_series('data/map_test_light.html').read())
+with col2:
+    st.image("https://raw.githubusercontent.com/kmedri/OLC_Streamlit/style/assets/time_series.png?raw=true")
