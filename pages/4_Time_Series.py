@@ -87,9 +87,7 @@ st.markdown('# Time Series')
 
 col1, col2 = st.columns((1, 1))
 with col1:
-    with st.spinner('Wait for it...'):
-        time.sleep(1)
-        components.html(load_time_series('data/map_test.html').read())
+    components.html(load_time_series('data/map_test.html').read())
 
 with col2:
     st.title('Time Series Using Plotly')
