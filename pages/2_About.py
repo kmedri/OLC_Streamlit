@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title='Home', layout='wide')
+st.set_page_config(page_title='About', layout='wide')
 
 st.markdown(
     """
