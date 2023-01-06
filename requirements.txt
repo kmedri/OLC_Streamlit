@@ -7,3 +7,4 @@ plotly.express
 cufflinks
 seaborn
 missingno
+altair
