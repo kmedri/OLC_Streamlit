@@ -449,12 +449,12 @@ We have 500,000 rows (values) and 34 columns (features).
 ### Data Types
 Lets have a look at the data types.
 	''')
+df_accident.info()
+# buffer = io.StringIO()
+# df_accident.info(buf=buffer)
+# s = buffer.getvalue()
 
-buffer = io.StringIO()
-df_accident.info(buf=buffer)
-s = buffer.getvalue()
-
-st.text(s)
+# st.text(s)
 
 st.markdown(
 	'''
