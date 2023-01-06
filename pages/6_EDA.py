@@ -1,27 +1,26 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import openpyxl
-import missingno as msno
-import os
-import io
+# import missingno as msno
+# import os
+# import io
 
-import matplotlib.pyplot as plt
-from matplotlib import rcParams
-import seaborn as sns
-import folium as flm
-import altair as alt
+# import matplotlib.pyplot as plt
+# from matplotlib import rcParams
+# import seaborn as sns
+# import folium as flm
+# import altair as alt
 
-from datetime import datetime
-import statistics
+# from datetime import datetime
+# import statistics
 
-import warnings
-warnings.filterwarnings("ignore")
+# import warnings
+# warnings.filterwarnings("ignore")
 
-rcParams['figure.figsize'] = (12,  6)
-sns.set(style='darkgrid', palette='pastel', font_scale=1)
+# rcParams['figure.figsize'] = (12,  6)
+# sns.set(style='darkgrid', palette='pastel', font_scale=1)
 
-pd.set_option('display.max_columns', None)
+# pd.set_option('display.max_columns', None)
 
 st.set_page_config(page_title='EDA', layout='wide')
 
@@ -439,8 +438,8 @@ Lets have a look ar the shape of the data.
 
 st.dataframe(df_accident.shape)
 
-g = msno.matrix(df_accident)
-st.pyplot(g.figure)
+# g = msno.matrix(df_accident)
+# st.pyplot(g.figure)
 
 
 st.markdown(
@@ -674,8 +673,8 @@ st.write(
 	'missing values.'
 	)
 
-f = msno.matrix(df_accident)
-st.pyplot(f.figure)
+# f = msno.matrix(df_accident)
+# st.pyplot(f.figure)
 
 st.markdown(
 	'''
