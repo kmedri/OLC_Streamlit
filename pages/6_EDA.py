@@ -64,7 +64,7 @@ with col2:
 
 st.header('Omdena Liverpool Chapter - Predicting RTC Severity - EDA')
 
-st.write('This is a sample of some of the EDA carried out on the data. It is only a sample of the data so the numbers and results may differ from the main EDA published on GitHub.')
+st.write('**This is a sample of some of the EDA carried out on the data. It is only a sample of the data so the numbers and results may differ from the main EDA published on GitHub.**')
 
 st.markdown(
     """
@@ -797,6 +797,7 @@ We have benchmarks of:
 - 1.3% for **Fatal** collisions
     """)
 
+st.write('#### Final DataFrame')
 st.dataframe(df_accident)
 # ## Features
 
