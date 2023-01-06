@@ -422,7 +422,7 @@ Lets have a look ar the shape of the data.
 st.dataframe(df_accident.shape)
 
 g = msno.matrix(df_accident)
-# st.pyplot(g.figure)
+st.pyplot(g.figure)
 
 
 st.markdown(
