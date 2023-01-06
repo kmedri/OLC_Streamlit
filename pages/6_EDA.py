@@ -796,6 +796,8 @@ We have benchmarks of:
 - 14.0% for **Serious** collision
 - 1.3% for **Fatal** collisions
     """)
+
+st.dataframe(df_accident)
 # ## Features
 
 # Lets remind ourselves of our features.
