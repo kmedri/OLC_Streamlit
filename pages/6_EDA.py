@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import missingno as msno
+import altair as alt
 import io
 
 st.set_page_config(page_title='EDA', layout='wide')
