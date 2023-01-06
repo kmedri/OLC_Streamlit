@@ -2,25 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import missingno as msno
-# import os
-# import io
-
-# import matplotlib.pyplot as plt
-# from matplotlib import rcParams
-# import seaborn as sns
-# import folium as flm
-# import altair as alt
-
-# from datetime import datetime
-# import statistics
-
-# import warnings
-# warnings.filterwarnings("ignore")
-
-# rcParams['figure.figsize'] = (12,  6)
-# sns.set(style='darkgrid', palette='pastel', font_scale=1)
-
-# pd.set_option('display.max_columns', None)
+import io
 
 st.set_page_config(page_title='EDA', layout='wide')
 
@@ -450,8 +432,11 @@ We have 500,000 rows (values) and 34 columns (features).
 Lets have a look at the data types.
     ''')
 
-k = df_accident.info()
-st.write(k)
+buffer = io.StringIO()
+df_accident.info(buf=buffer)
+s1 = buffer.getvalue()
+
+st.text(s1)
 
 st.markdown(
     '''
@@ -696,8 +681,11 @@ st.code(df_accident.columns)
 
 st.write('Now we can check datatypes.')
 
-k1 = df_accident.info()
-st.write(k1)
+buffer = io.StringIO()
+df_accident.info(buf=buffer)
+s2 = buffer.getvalue()
+
+st.text(s2)
 
 st.write('Lets take a sample row and have a look at each feature in more detail.')
 
@@ -724,8 +712,11 @@ for col in ['number_of_casualties', 'number_of_vehicles']:
 for col in ['latitude', 'longitude']:
     df_accident[col] = df_accident[col].astype('float64')
 
-k2 = df_accident.info()
-st.write(k2)
+buffer = io.StringIO()
+df_accident.info(buf=buffer)
+s3 = buffer.getvalue()
+
+st.text(s3)
 
 st.markdown(
     """
